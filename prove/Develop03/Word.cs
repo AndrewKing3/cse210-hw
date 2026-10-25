@@ -35,5 +35,10 @@ class Word
         return _word;
     }
 
+    public void display()
+    {
+        Console.WriteLine(GetWord());
+    }
+
 
 }

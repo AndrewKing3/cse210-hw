@@ -1,5 +1,8 @@
 using System;
 
+
+
+// the above and beyond I did was making sure that words already removed can't be removed again
 class Program
 {
     static void Main(string[] args)
