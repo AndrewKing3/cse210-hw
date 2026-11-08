@@ -1,7 +1,7 @@
 using System;
 using System.Net.Security;
 
-class Program
+class Program// for the above and beyond I record the total time spent in each activity
 {
     static void Main(string[] args)
     {
@@ -13,9 +13,9 @@ class Program
         ReflectionActivity refActivity = new ReflectionActivity();
         ListingActivity listActivity = new ListingActivity();
 
-       int response = 0;
+        int response = 0;
         int duration = 0;
-       while (response != 4)
+        while (response != 4)
         {
             response = myMenu.ProcessMenu();
 
