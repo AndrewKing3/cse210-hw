@@ -1,17 +1,23 @@
 ﻿class Program
 {
     
+    public static void DisplayPersonInfo(Person person)
+    {
+        Console.WriteLine(person.GetPersonInfo());
+    }
+
+
     public static void Main()
     {
-        Person myPerson = new Person("Andrew","King",19, 120);
-        Console.WriteLine(myPerson.GetPersonInfo());
+        Person myPerson = new Person("John","Revelator",50, 190);
+        //Console.WriteLine(myPerson.GetPersonInfo());
 
 
         Doctor myDoctor = new Doctor ("Bob", "Payne", 45, 279, "Knife");
-        Console.WriteLine(myDoctor.GetDoctorInfo());
+       // Console.WriteLine(myDoctor.GetDoctorInfo());
 
         Police myPolice = new Police ("Gary", "Goodman", 61, 181, "Gun");
-        Console.WriteLine(myPolice.GetPoliceInfo());
+        //Console.WriteLine(myPolice.GetPoliceInfo());
 
         List<Person> myPeople  = new List<Person>();
 
@@ -21,10 +27,7 @@
 
         foreach(Person person in myPeople)
         {
-            
-            Console.WriteLine(person.GetPersonInfo());
-            
-            
+            DisplayPersonInfo(person);   
         }
 
     }
